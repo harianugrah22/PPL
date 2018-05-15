@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "551308618848",
+    "firebase_url": "https://ppl-yihu.firebaseio.com",
+    "project_id": "ppl-yihu",
+    "storage_bucket": "ppl-yihu.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:551308618848:android:3db88ae62037cb6e",
+        "android_client_info": {
+          "package_name": "com.example.user.ppl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "551308618848-7dk98dap6s05tougdmku607iekq7fic8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.user.ppl",
+            "certificate_hash": "3c1a3e78f8964864169f50839c4d8532e70f4652"
+          }
+        },
+        {
+          "client_id": "551308618848-ns0shvdckt09s554dhf4605a5v4ddptd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJ-ZT-hw7RQ_YBBauuy-7svdljmftBEeo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "551308618848-ns0shvdckt09s554dhf4605a5v4ddptd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

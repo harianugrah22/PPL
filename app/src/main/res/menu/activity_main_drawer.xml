@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Kelompok Anda">
+        <menu>
+            <item
+                android:id="@+id/nav_Kelompok_A"
+                android:title="Kelompok A" />
+            <item
+                android:id="@+id/nav_Kelompok_B"
+                android:title="Kelompok B">
+            </item>
+        </menu>
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_add_kelompok"
+            android:icon="@drawable/ic_group_add_black_24dp"
+            android:title="Tambah Kelompok" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Setting" />
+        <item
+            android:id="@+id/nav_help"
+            android:icon="@drawable/ic_help_outline_black_24dp"
+            android:title="Help" />
+        <item
+            android:id="@+id/nav_about_us"
+            android:icon="@drawable/ic_info_outline_black_24dp"
+            android:title="About Us" />
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/ic_exit_to_app_black_24dp"
+            android:title="Log Out" />
+    </group>
+
+</menu>

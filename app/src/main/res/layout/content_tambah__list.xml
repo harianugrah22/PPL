@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.user.ppl.Tambah_List"
+    tools:showIn="@layout/activity_tambah__list">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/editTextTaskDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="@string/edit_task_description"
+            android:paddingBottom ="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="8dp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="start"
+            android:hint="Describe the time"
+            android:paddingBottom ="@dimen/activity_horizontal_margin"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- TextView and FrameLayout (which contains buttons) for Priority Selection -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@android:color/primary_text_light"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="Keterangan"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:ems="10"
+            android:inputType="textMultiLine" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:textColor="@android:color/primary_text_light"
+            style="@style/TextAppearance.AppCompat.Medium"
+            android:text="@string/priority_string"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_vertical_margin">
+
+            <!-- Linear layout that contains all three priority buttons (high, medium, low)
+            in a single line -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3">
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="@android:color/primary_text_light"
+                    android:id="@+id/buttonP1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/materialRed"
+                    android:text="@string/high_priority"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="@android:color/primary_text_light"
+                    android:id="@+id/buttonP2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/materialOrange"
+                    android:text="@string/med_priority"
+                    android:layout_weight="1"
+                    />
+
+                <Button
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:textColor="@android:color/primary_text_light"
+                    android:id="@+id/buttonP3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/materialYellow"
+                    android:text="@string/low_priority"
+                    android:layout_weight="1"
+                    />
+
+            </LinearLayout>
+
+            <!-- RadioGroup for visible selection of a priority -->
+            <RadioGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/radButton1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/WhiteRadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/radButton2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/WhiteRadioButton"/>
+
+                <RadioButton
+                    android:id="@+id/radButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:theme="@style/WhiteRadioButton"/>
+
+            </RadioGroup>
+
+        </FrameLayout>
+
+        <!-- Add button -->
+        <Button
+            android:id="@+id/addButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/add_button"
+            style="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@android:color/primary_text_dark"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
